@@ -8,7 +8,20 @@ public class SetMain {
         Set<String> set = new HashSet<>();
         set.add("one");
         set.add("two");
-        set.add("ten");
-        System.out.println(set);
+        boolean value = set.add("ten");
+        System.out.println(set + " " + value);
+        value = set.add("ten");
+        System.out.println(set + " " + value);
+        value = set.add(new String("ten"));
+        System.out.println(set + " " + value);
+
+        Set<String> setAnonimClass = new HashSet<String>() {
+            {
+                this.add("one");
+                this.add("two");
+                this.add("ten");
+            }
+        };
+        System.out.println(setAnonimClass);
     }
 }
