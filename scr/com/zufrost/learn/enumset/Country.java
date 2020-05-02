@@ -2,7 +2,7 @@ package com.zufrost.learn.enumset;
 
 public enum  Country {
     ARMENIA(3, 28_470),
-    BEKARUS(9, 202_910),
+    BELARUS(9, 202_910),
     INDIA(1_370, 2_973_190),
     KAZAKHSTAN(18, 2_899_700),
     POLAND(38, 306_230),
